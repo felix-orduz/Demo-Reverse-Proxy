@@ -1,0 +1,15 @@
+{
+  "name": "demo_reverse_proxy",
+  "version": "1.0.0",
+  "description": "NodeJS demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Felix E. Orduz G.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

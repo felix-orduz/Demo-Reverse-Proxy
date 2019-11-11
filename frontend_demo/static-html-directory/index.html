@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frontend</title>
+<script>
+window.onload = function () {
+    fetch('/api', { method: 'get'}).then((response) => {
+        const json = response.text();
+        if (response.ok) {
+            return json;
+        }
+        return Promise.reject(new Error('Something went wrong.'));
+    })
+    .then((response) => {
+        document.getElementById('version').innerHTML = response;
+    }).catch((error) => {
+        document.getElementById('error').innerHTML = error && error.message || 'Something else went wrong.';
+    });
+};
+</script>
+</head>
+<body>
+<h1>My name is:</h1>
+<p id="version"></p>
+<p id="error"></p>
+</body>
+</html>
