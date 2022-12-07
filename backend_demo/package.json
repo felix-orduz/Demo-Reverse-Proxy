@@ -10,6 +10,6 @@
   "author": "Felix E. Orduz G.",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.18.2"
   }
 }
